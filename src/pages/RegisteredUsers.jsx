@@ -1,7 +1,7 @@
 import Sidebar from "../components/Sidebar";
 import Datatable from "../datatable/Datatable";
 
-const registeredUsers = () => {
+const RegisteredUsers = () => {
   return (
     <div className="flex">
       <div>
@@ -14,4 +14,4 @@ const registeredUsers = () => {
   );
 };
 
-export default registeredUsers;
+export default RegisteredUsers;
