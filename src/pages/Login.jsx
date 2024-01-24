@@ -17,7 +17,7 @@ const Login = () => {
 
   const onSubmit = (data) => {
     axios
-      .post("http://localhost:5555/login", data)
+      .post("https://population-census-backend.onrender.com/login", data)
       .then(() => {
         toast.success("Login successful", {
           position: "top-right",

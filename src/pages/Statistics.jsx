@@ -13,7 +13,9 @@ const Statistics = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5555/user");
+        const response = await axios.get(
+          "https://population-census-backend.onrender.com/user"
+        );
         const userData = response.data.data;
         setUsers(userData);
         let totalNumChildrenAbove21 = 0;

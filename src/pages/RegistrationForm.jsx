@@ -34,7 +34,10 @@ const RegistrationForm = () => {
 
     if (age >= 21) {
       axios
-        .post("http://localhost:5555/user", { ...data, age })
+        .post("https://population-census-backend.onrender.com/user", {
+          ...data,
+          age,
+        })
         .then(() => {
           toast.success("Registration successful", {
             position: "top-right",
